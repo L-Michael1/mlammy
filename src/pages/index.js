@@ -4,10 +4,12 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Typewriter from "../components/typewriter"
 
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
+    <Typewriter text="Michael Lam" />
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
