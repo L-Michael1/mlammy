@@ -9,7 +9,7 @@ import Typewriter from "../components/typewriter"
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <Typewriter text="Michael Lam" />
+    <Typewriter text="Michael Lam" minTypeSpeed={50} maxTypeSpeed={90} initDelay={700} />
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>

@@ -1,16 +1,13 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 
-const Typewriter = ({ text }) => {
+const Typewriter = ({ text, minTypeSpeed, maxTypeSpeed, initDelay }) => {
 
     const [string, setString] = useState();
 
     const typeEffect = () => {
         let initString = '';
         let typeSpeed = 0;
-        let minTypeSpeed = 50;
-        let maxTypeSpeed = 90;
-        let initDelay = 700;
 
         text.split('').forEach(char => {
             typeSpeed += Math.random() * (maxTypeSpeed - minTypeSpeed) + minTypeSpeed;
@@ -21,6 +18,7 @@ const Typewriter = ({ text }) => {
         })
     }
 
+    //cdm
     useEffect(() => {
         typeEffect();
     }, [])
