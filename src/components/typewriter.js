@@ -18,15 +18,14 @@ const Typewriter = ({ text, minTypeSpeed, maxTypeSpeed, initDelay }) => {
         })
     }
 
-    //cdm
     useEffect(() => {
         typeEffect();
     }, [])
 
     return (
         <div>
-            {string}
-            <span>&nbsp;</span>
+            <h1>{string}</h1>
+            <span style={{ backgroundColor: "blue" }}>&nbsp;</span>
         </div>
     )
 }
