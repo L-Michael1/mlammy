@@ -9,7 +9,7 @@ import Typewriter from "../components/typewriter"
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <Typewriter text="Eirkin Dahi" minTypeSpeed={80} maxTypeSpeed={90} initDelay={700} />
+    <Typewriter text="Eirkin Dahi" minTypeSpeed={100} maxTypeSpeed={120} initDelay={700} />
     {/* <StaticImage
       src="../images/gatsby-astronaut.png"
       width={300}
