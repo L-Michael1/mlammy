@@ -25,7 +25,7 @@ const Typewriter = ({ text, minTypeSpeed, maxTypeSpeed, initDelay }) => {
     return (
         <div>
             <h1>{string}</h1>
-            <span style={{ backgroundColor: "blue" }}>&nbsp;</span>
+            {/* <span style={{ backgroundColor: "blue" }}>&nbsp;</span> */}
         </div>
     )
 }

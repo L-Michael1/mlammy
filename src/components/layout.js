@@ -39,7 +39,7 @@ const Layout = ({ children }) => {
             marginTop: `2rem`,
           }}
         >
-          Michael Lam © {new Date().getFullYear()}
+          {data.site.siteMetadata?.title || `Title`} © {new Date().getFullYear()}
         </footer>
       </div>
     </>

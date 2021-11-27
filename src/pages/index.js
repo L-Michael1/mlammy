@@ -9,7 +9,7 @@ import Typewriter from "../components/typewriter"
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <Typewriter text="Eirkin Dahi" minTypeSpeed={100} maxTypeSpeed={120} initDelay={700} />
+    <Typewriter text="Michael Lam" minTypeSpeed={100} maxTypeSpeed={120} initDelay={700} />
     {/* <StaticImage
       src="../images/gatsby-astronaut.png"
       width={300}
@@ -18,12 +18,12 @@ const IndexPage = () => (
       alt="A Gatsby astronaut"
       style={{ marginBottom: `1.45rem` }}
     /> */}
-    <p>
+    {/* <p>
       <Link to="/page-2/">Go to page 2</Link> <br />
       <Link to="/using-typescript/">Go to "Using TypeScript"</Link> <br />
       <Link to="/using-ssr">Go to "Using SSR"</Link> <br />
       <Link to="/using-dsg">Go to "Using DSG"</Link>
-    </p>
+    </p> */}
   </Layout >
 )
 
