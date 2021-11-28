@@ -9,15 +9,15 @@ import Typewriter from "../components/typewriter/typewriter"
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <Typewriter textColor='#FFE8D6' text='Michael Lam' />
-    {/* <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
+    <StaticImage
+      src="../images/mlam.png"
+      width={275}
       quality={95}
       formats={["auto", "webp", "avif"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    /> */}
+      alt="Michael Lam"
+      style={{ marginTop: `2rem`, marginBottom: `1.5rem`, borderRadius: `25px` }}
+    />
+    <Typewriter textColor='#FFE8D6' text='Michael Lam' textAlign='inline' />
     {/* <p>
       <Link to="/page-2/">Go to page 2</Link> <br />
       <Link to="/using-typescript/">Go to "Using TypeScript"</Link> <br />

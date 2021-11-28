@@ -1,7 +1,31 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
+import styled, { keyframes } from 'styled-components'
 
 const Typewriter = ({ text, textColor, textAlign, minTypeSpeed, maxTypeSpeed, initDelay }) => {
+
+    const Containter = styled.div`
+        text-align: ${textAlign};
+        margin: 1.5rem;
+        display: flex;
+        flex-direction: row;
+    `
+    const Text = styled.h1`
+        margin: 0;
+        color: ${textColor};
+        &:before {
+            content: '>  ';
+        }
+    `
+
+    const blinkAnimation = keyframes`
+        50% { background-color: transparent;}
+    `
+
+    const Blink = styled.span`
+        background-color: ${textColor};
+        animation: ${blinkAnimation} 1s steps(1) infinite;
+    `
 
     const [string, setString] = useState();
 
@@ -23,9 +47,10 @@ const Typewriter = ({ text, textColor, textAlign, minTypeSpeed, maxTypeSpeed, in
     }, [])
 
     return (
-        <div style={{ textAlign: textAlign }}>
-            <h1 style={{ color: textColor }}>{string}</h1>
-        </div>
+        <Containter>
+            <Text>{string}</Text>
+            <Blink>&nbsp;</Blink>
+        </Containter>
     )
 }
 

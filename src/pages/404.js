@@ -17,8 +17,8 @@ const NotFoundPage = () => (
     <Description>You just entered a nonexistent world...oh, so sad.</Description>
     <StaticImage
       src="../images/404.png"
-      width={200}
-      height={200}
+      width={350}
+      height={350}
       quality={100}
       formats={["auto", "webp", "avif"]}
       alt="Sad anime character"
