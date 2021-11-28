@@ -1,7 +1,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import { Flex, Box, Center } from "@chakra-ui/react"
+import { Box, Center } from "@chakra-ui/react"
 import styled from "styled-components"
 
 import "./layout.css"
@@ -19,8 +19,8 @@ const Layout = ({ children }) => {
 
   return (
     <Box maxWidth={960} margin='auto'>
-      <Center>
-        <main>{children}</main>
+      <Center flexDirection="column">
+        {children}
       </Center>
       <Center>
         <Footer>
