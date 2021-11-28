@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 
-const Typewriter = ({ text, textColor, minTypeSpeed, maxTypeSpeed, initDelay }) => {
+const Typewriter = ({ text, textColor, textAlign, minTypeSpeed, maxTypeSpeed, initDelay }) => {
 
     const [string, setString] = useState();
 
@@ -23,9 +23,9 @@ const Typewriter = ({ text, textColor, minTypeSpeed, maxTypeSpeed, initDelay }) 
     }, [])
 
     return (
-        <div>
+        <div style={{ textAlign: textAlign }}>
             <h1 style={{ color: textColor }}>{string}</h1>
-        </div >
+        </div>
     )
 }
 
@@ -33,6 +33,7 @@ export default Typewriter
 
 Typewriter.defaultProps = {
     text: 'Text',
+    textAlign: 'left',
     textColor: '#000000',
     minTypeSpeed: 100,
     maxTypeSpeed: 120,

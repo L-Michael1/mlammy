@@ -10,14 +10,10 @@ const Description = styled.p`
   text-align: center;
 `
 
-const Header = styled(Typewriter)`
-  text-align: center;
-`
-
 const NotFoundPage = () => (
   <Layout>
     <Seo title="404: Not found" />
-    <Header text="404: Not Found" textColor="#FFE8D6" initDelay={0} minTypeSpeed={60} maxTypeSpeed={70} />
+    <Typewriter text="404: Not Found" textAlign="center" textColor="#FFE8D6" initDelay={0} minTypeSpeed={60} maxTypeSpeed={70} />
     <Description>You just entered a nonexistent world...oh, so sad.</Description>
     <StaticImage
       src="../images/404.png"
