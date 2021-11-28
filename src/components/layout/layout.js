@@ -1,13 +1,8 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
-
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { Flex, Box, Center } from "@chakra-ui/react"
+import styled from "styled-components"
 
 import "./layout.css"
 
@@ -23,29 +18,25 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
+    <Box maxWidth={960} margin='auto'>
+      <Center>
         <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `2rem`,
-          }}
-        >
+      </Center>
+      <Center>
+        <Footer>
           {data.site.siteMetadata?.title || `Title`} © {new Date().getFullYear()}
-        </footer>
-      </div>
-    </>
+        </Footer>
+      </Center>
+    </Box>
   )
 }
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
+
+const Footer = styled.footer`
+  margin-top: 3rem;
+`
 
 export default Layout

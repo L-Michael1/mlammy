@@ -2,14 +2,14 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
-import Typewriter from "../components/typewriter"
+import Layout from "../components/layout/layout"
+import Seo from "../components/seo/seo"
+import Typewriter from "../components/typewriter/typewriter"
 
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <Typewriter textColor='#FFE8D6' text='> Michael Lam' minTypeSpeed={100} maxTypeSpeed={120} initDelay={700} />
+    <Typewriter textColor='#FFE8D6' text='Michael Lam' />
     {/* <StaticImage
       src="../images/gatsby-astronaut.png"
       width={300}

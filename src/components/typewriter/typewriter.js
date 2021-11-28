@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react'
 
 const Typewriter = ({ text, textColor, minTypeSpeed, maxTypeSpeed, initDelay }) => {
 
@@ -25,17 +25,16 @@ const Typewriter = ({ text, textColor, minTypeSpeed, maxTypeSpeed, initDelay }) 
     return (
         <div>
             <h1 style={{ color: textColor }}>{string}</h1>
-            {/* <span style={{ backgroundColor: "" }}>&nbsp;</span> */}
         </div >
     )
 }
 
-export default Typewriter;
+export default Typewriter
 
 Typewriter.defaultProps = {
     text: 'Text',
     textColor: '#000000',
     minTypeSpeed: 100,
     maxTypeSpeed: 120,
-    initDelay: 700
+    initDelay: 300
 }
