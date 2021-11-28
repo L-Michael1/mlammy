@@ -6,7 +6,7 @@ import Seo from "../components/seo/seo"
 import Typewriter from "../components/typewriter/typewriter"
 
 const IndexPage = () => (
-  <Layout>
+  <>
     <Seo title="Home" />
     <StaticImage
       src="../images/mlam.png"
@@ -24,7 +24,7 @@ const IndexPage = () => (
       <Link to="/using-ssr">Go to "Using SSR"</Link> <br />
       <Link to="/using-dsg">Go to "Using DSG"</Link>
     </p> */}
-  </Layout >
+  </>
 )
 
 export default IndexPage

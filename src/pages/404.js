@@ -1,10 +1,9 @@
-import * as React from "react"
-import Layout from "../components/layout/layout"
-import Seo from "../components/seo/seo"
-import Typewriter from "../components/typewriter/typewriter"
-import styled from "styled-components"
+import * as React from 'react'
+import Seo from '../components/seo/seo'
+import Typewriter from '../components/typewriter/typewriter'
+import styled from 'styled-components'
 import bepopGIF from '../gifs/404-smoke.gif'
-import { StaticImage } from "gatsby-plugin-image"
+import { Link } from 'gatsby'
 
 const Description = styled.p`
   color: #FFFFFF;
@@ -12,16 +11,15 @@ const Description = styled.p`
 `
 
 const Gif = styled.img`
-  margin-top: 3rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin: 3rem 2rem;
   border-radius: 25px;
-  width: 62%;
+  width: 55%;
   height: auto;
 `
 
+
 const NotFoundPage = () => (
-  <Layout>
+  <>
     <Seo title="404: Not found" />
     <Typewriter text="404: Not Found" textAlign="center" textColor="#FFE8D6" initDelay={0} minTypeSpeed={60} maxTypeSpeed={70} />
     <Description>You just entered a nonexistent world...oh, so sad.</Description>
@@ -29,7 +27,7 @@ const NotFoundPage = () => (
       src={bepopGIF}
       alt="Cowboy Bepop smoking gif"
     />
-  </Layout>
+  </>
 )
 
 export default NotFoundPage

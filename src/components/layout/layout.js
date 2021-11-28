@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import { Box, Center } from "@chakra-ui/react"
 import styled from "styled-components"
 import Particles from "react-particles-js"
-import { options } from "../../particles"
+import { options } from "./particles"
 
 import "./layout.css"
 
