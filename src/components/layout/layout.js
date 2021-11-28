@@ -3,6 +3,8 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { Box, Center } from "@chakra-ui/react"
 import styled from "styled-components"
+import Particles from "react-particles-js"
+import { options } from "../../particles"
 
 import "./layout.css"
 
@@ -19,6 +21,7 @@ const Layout = ({ children }) => {
 
   return (
     <Box maxWidth={960} margin='auto'>
+      <Particles params={options} />
       <Center flexDirection="column">
         {children}
       </Center>

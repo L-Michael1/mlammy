@@ -1,7 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-
 import Layout from "../components/layout/layout"
 import Seo from "../components/seo/seo"
 import Typewriter from "../components/typewriter/typewriter"
@@ -12,6 +11,7 @@ const IndexPage = () => (
     <StaticImage
       src="../images/mlam.png"
       width={275}
+      height={"auto"}
       quality={95}
       formats={["auto", "webp", "avif"]}
       alt="Michael Lam"
