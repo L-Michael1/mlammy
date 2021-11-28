@@ -3,6 +3,7 @@ import Seo from '../components/seo/seo'
 import Typewriter from '../components/typewriter/typewriter'
 import styled from 'styled-components'
 import bepopGIF from '../gifs/404-smoke.gif'
+import { Button } from '@chakra-ui/react'
 import { Link } from 'gatsby'
 
 const Description = styled.p`
@@ -13,10 +14,21 @@ const Description = styled.p`
 const Gif = styled.img`
   margin: 3rem 2rem;
   border-radius: 25px;
-  width: 55%;
+  width: 54%;
   height: auto;
 `
 
+const HomeButton = styled(Button)`
+  background-color: #FFE8D6;
+  color: #282931;
+  border-color: #FFE8D6;
+  width: 100%auto;
+
+  :hover{
+    background-color: #DDBEA9;
+    cursor: pointer;
+  }
+`
 
 const NotFoundPage = () => (
   <>
@@ -27,6 +39,11 @@ const NotFoundPage = () => (
       src={bepopGIF}
       alt="Cowboy Bepop smoking gif"
     />
+    <Link to='/' style={{ textDecoration: 'none' }}>
+      <HomeButton variant='solid' size='md'>
+        Back to Homepage
+      </HomeButton>
+    </Link>
   </>
 )
 
