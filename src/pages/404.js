@@ -1,13 +1,18 @@
 import * as React from "react"
 import Layout from "../components/layout/layout"
 import Seo from "../components/seo/seo"
-import { Center, Box } from "@chakra-ui/react"
+import Typewriter from "../components/typewriter/typewriter"
+import styled from "styled-components"
+
+const Description = styled.p`
+  color: #FFFFFF;
+`
 
 const NotFoundPage = () => (
   <Layout>
     <Seo title="404: Not found" />
-    <h1>404: Not Found</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <Typewriter text="404: Not Found" textColor="#FFE8D6" initDelay={0} minTypeSpeed={60} maxTypeSpeed={70} />
+    <Description>You just entered a nonexistent world...oh, so sad.</Description>
   </Layout>
 )
 

@@ -37,6 +37,7 @@ Layout.propTypes = {
 
 const Footer = styled.footer`
   margin-top: 3rem;
+  color: #FFE8D6;
 `
 
 export default Layout
