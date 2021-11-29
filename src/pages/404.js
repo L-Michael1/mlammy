@@ -19,13 +19,13 @@ const Gif = styled.img`
 `
 
 const HomeButton = styled(Button)`
-  background-color: #FFE8D6;
+  background-color: #DDEECC;
   color: #282931;
-  border-color: #FFE8D6;
+  border-color: #DDEECC;
   width: 100%auto;
 
   :hover{
-    background-color: #DDBEA9;
+    background-color: #B9C8AB;
     cursor: pointer;
   }
 `
@@ -33,7 +33,7 @@ const HomeButton = styled(Button)`
 const NotFoundPage = () => (
   <>
     <Seo title="404: Not found" />
-    <Typewriter text="404: Not Found" textAlign="center" textColor="#FFE8D6" initDelay={0} minTypeSpeed={60} maxTypeSpeed={70} />
+    <Typewriter text="404: Not Found" textAlign="center" textColor="#DDEECC" initDelay={0} minTypeSpeed={60} maxTypeSpeed={70} />
     <Description>You just entered a nonexistent world...oh, so sad.</Description>
     <Gif
       src={bepopGIF}

@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Varela Round', sans-serif !important;
-  background: #282931;
+  background: #1d1e24;
 }
 
 #tsparticles {

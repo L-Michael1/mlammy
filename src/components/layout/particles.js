@@ -1,7 +1,7 @@
 export const options = {
     background: {
         color: {
-            value: "#282931"
+            value: "#1d1e24"
         }
     },
     particles: {
@@ -12,7 +12,7 @@ export const options = {
             }
         },
         size: {
-            value: 10,
+            value: 5,
             random: true
         },
         move: {
