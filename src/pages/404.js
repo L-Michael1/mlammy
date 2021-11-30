@@ -24,8 +24,8 @@ const HomeButton = styled(Button)`
   border-color: #DDEECC;
   width: 100%auto;
   transition: all 0.3s ease 0s;
-  padding: 1.3rem;
-  font-size: 1.3rem;
+  padding: 1.25rem;
+  font-size: 1.20rem;
 
   :hover{
     transform: translateY(-3px);
