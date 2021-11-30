@@ -11,10 +11,23 @@ const Typewriter = ({ text, textColor, textAlign, minTypeSpeed, maxTypeSpeed, in
         flex-direction: row;
     `
     const Text = styled.h1`
-        margin: 0;
+        font-size: 2rem;
+        margin: 0rem;
         color: ${textColor};
         &:before {
             content: '>  ';
+        }
+
+        @media (max-width: 480px) {
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 320px) {
+            font-size: 1.25rem;
+        }
+
+        @media (max-width: 240px) {
+            font-size: 1rem;
         }
     `
 

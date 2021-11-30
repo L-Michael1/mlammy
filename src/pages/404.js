@@ -23,10 +23,29 @@ const HomeButton = styled(Button)`
   color: #282931;
   border-color: #DDEECC;
   width: 100%auto;
+  transition: all 0.3s ease 0s;
+  padding: 1.3rem;
+  font-size: 1.3rem;
 
   :hover{
+    transform: translateY(-3px);
     background-color: #B9C8AB;
     cursor: pointer;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 320px) {
+    padding: 0.6rem;
+    font-size: 0.8rem;
+  }
+
+  @media (max-width: 240px) {
+    padding: 0.6rem;
+    font-size: 0.675rem;
   }
 `
 
@@ -40,7 +59,7 @@ const NotFoundPage = () => (
       alt="Cowboy Bepop smoking gif"
     />
     <Link to='/' style={{ textDecoration: 'none' }}>
-      <HomeButton variant='solid' size='md'>
+      <HomeButton variant='solid'>
         Back to Homepage
       </HomeButton>
     </Link>

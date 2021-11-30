@@ -7,7 +7,7 @@ export const Container = styled.div`
 `
 
 export const IconWrapper = styled.div`
-    margin: 0px 15px;
+    margin: 0rem 1rem;
 
     transition: all 0.3s ease 0s;
     &:hover {
