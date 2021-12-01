@@ -1,19 +1,19 @@
 import React from 'react'
-import { Container, SplitContainer, SectionHeader } from './section.styled'
+import { Container, SplitContainer, ContentContainer } from './section.styled'
 
 const Section = ({ leftHeader, leftContent, rightHeader, rightContent }) => {
     return (
         <section>
             <Container>
                 <SplitContainer>
-                    <div>
-                        <SectionHeader>{leftHeader}</SectionHeader>
+                    <ContentContainer>
+                        <h2>{leftHeader}</h2>
                         <p>{leftContent}</p>
-                    </div>
-                    <div>
-                        <SectionHeader>{rightHeader}</SectionHeader>
+                    </ContentContainer>
+                    <ContentContainer>
+                        <h2>{rightHeader}</h2>
                         <p>{rightContent}</p>
-                    </div>
+                    </ContentContainer>
                 </SplitContainer>
             </Container>
         </section>

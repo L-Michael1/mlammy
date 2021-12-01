@@ -11,6 +11,14 @@ body {
   color: #FFFFFF;
 }
 
+h2 {
+  color: #DDEECC;
+}
+
+p {
+  color: #FFFFFF;
+}
+
 #tsparticles {
   position: fixed;
   height: 100%;
