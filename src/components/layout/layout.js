@@ -1,9 +1,9 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-import { Box, Center } from "@chakra-ui/react"
 import styled from "styled-components"
 import Particles from "react-particles-js"
+import { useStaticQuery, graphql } from "gatsby"
+import { Box, Center, ScaleFade } from "@chakra-ui/react"
 import { options } from "./particles"
 
 import "./layout.css"
@@ -22,14 +22,16 @@ const Layout = ({ children }) => {
   return (
     <Box maxWidth={960} margin='auto'>
       <Particles params={options} />
-      <Center flexDirection="column">
-        {children}
-      </Center>
-      <Center>
-        <Footer>
-          {data.site.siteMetadata?.title || `Title`} © {new Date().getFullYear()}
-        </Footer>
-      </Center>
+      <ScaleFade in={true} initialScale={0.45}>
+        <Center flexDirection="column">
+          {children}
+        </Center>
+        <Center>
+          <Footer>
+            {data.site.siteMetadata?.title || `Title`} © {new Date().getFullYear()}
+          </Footer>
+        </Center>
+      </ScaleFade>
     </Box>
   )
 }

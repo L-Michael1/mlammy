@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
     margin-inline: auto;
-    width: min(100%, 70rem);
+    width: min-content(100%, 70rem);
 `
 
 export const SplitContainer = styled.div`
@@ -16,5 +16,5 @@ export const SplitContainer = styled.div`
 
 export const ContentContainer = styled.div`
     margin: 0rem 1.2rem;
-    width: min(95%, 70rem);
+    width: min(100%, 70rem);
 `
