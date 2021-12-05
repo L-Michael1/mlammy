@@ -13,8 +13,10 @@ import { HeaderContainer, IconWrapper, Logo, SubHeadingLink, SubIconWrapper } fr
 // Icons
 import { MdWork } from 'react-icons/md'
 import { AiOutlineLink } from 'react-icons/ai'
-import { FaLaptopCode } from "react-icons/fa";
-import { AiFillProject } from "react-icons/ai";
+import { FaLaptopCode } from "react-icons/fa"
+import { AiFillProject } from "react-icons/ai"
+import { IoMdSchool } from 'react-icons/io'
+import { HiOutlineDocumentReport } from "react-icons/hi"
 import C from '../images/c.svg'
 import Docker from '../images/docker.svg'
 import Firebase from '../images/firebase.svg'
@@ -209,7 +211,7 @@ const IndexPage = () => (
       rightContent={[
         <HeaderContainer>
           <IconWrapper>
-            <FaLaptopCode />
+            <IoMdSchool />
           </IconWrapper>
           <h2>Education</h2>
         </HeaderContainer>,
@@ -222,9 +224,23 @@ const IndexPage = () => (
           - Enrolled in the <b>Computer Science (Co-op)</b> program <br />
           - Dean's Honours List (2019-Present) - Achieved through earning an 80% or above <br />
           - Awarded University of Guelph Entrance Scholarship ($3000) - Achieved through having an acceptance average over 90% <br />
-        </p>
+        </p>,
+        <HeaderContainer>
+          <IconWrapper>
+            <HiOutlineDocumentReport />
+          </IconWrapper>
+          <h2>Work Term Reports</h2>
+        </HeaderContainer>,
+        <h3>Find my Co-op work term reports below!</h3>,
+        <HeaderContainer>
+          <SubHeadingLink to='https://github.com/L-Michael1/m-bot' target='_blank'>
+            <SubIconWrapper>
+              <AiOutlineLink />
+            </SubIconWrapper>
+            <h3>Tulip Work Term Report</h3>
+          </SubHeadingLink>
+        </HeaderContainer>,
       ]} />
-
     {/* <p>
       <Link to="/page-2/">Go to page 2</Link> <br />
       <Link to="/using-typescript/">Go to "Using TypeScript"</Link> <br />
