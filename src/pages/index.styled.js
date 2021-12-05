@@ -38,3 +38,8 @@ export const SubHeadingLink = styled(Link)`
         text-decoration: underline;
     }
 `
+
+export const Logo = styled.img`
+    width: 1rem;
+    height: auto;
+`

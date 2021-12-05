@@ -8,12 +8,28 @@ import Typewriter from "../components/typewriter/typewriter"
 import Contact from '../components/contact/contact'
 import Section from '../components/section/section'
 import Header from '../components/header/header'
-import { HeaderContainer, IconWrapper, SubHeading, SubHeadingLink, SubIconWrapper } from './index.styled'
+import { HeaderContainer, IconWrapper, Logo, SubHeadingLink, SubIconWrapper } from './index.styled'
 
 // Icons
 import { MdWork } from 'react-icons/md'
 import { AiOutlineLink } from 'react-icons/ai'
 import { FaLaptopCode } from "react-icons/fa";
+import { AiFillProject } from "react-icons/ai";
+import C from '../images/c.svg'
+import Docker from '../images/docker.svg'
+import Firebase from '../images/firebase.svg'
+import Html from '../images/html.svg'
+import Java from '../images/java.svg'
+import JavaScript from '../images/javascript.svg'
+import Mongodb from '../images/mongodb.svg'
+import NodeDot from '../images/node-dot-js.svg'
+import Node from '../images/node.svg'
+import Php from '../images/php.svg'
+import ReactLogo from '../images/react.svg'
+import Redux from '../images/redux.svg'
+import Sql from '../images/sql.svg'
+import Test from '../images/test.svg'
+import TypeScript from '../images/typescript.svg'
 
 const IndexPage = () => (
   <>
@@ -47,16 +63,19 @@ const IndexPage = () => (
           <h3>Tulip</h3>
         </SubHeadingLink>
       </HeaderContainer>,
-      <p>
-        Backend Software Developer - Checkout <br />
-        Guelph, Ontario <br />
-        Sep 2021 - Dec 2021 <br /> <br />
-        Tulip is a company that provides software as a service that aims at digitizing retail. At Tulip, I was
-        part of the Checkout team working as a Backend Software Developer. I worked on a range of tasks such as:
-        creating backend endpoints in PHP, SQL query optimizations, reducing time complexity within
-        codebase, optimizing a metric dashboard for API requests in Grafana, reducing PHP errors/warnings
-        by 80% in GCP logs, bug fixes, and more.
-      </p>,
+      <div>
+        <p>
+          Backend Software Developer - Checkout <br />
+          Guelph, Ontario <br />
+          Sep 2021 - Dec 2021 <br /> <br />
+          Tulip is a company that provides software as a service that aims at digitizing retail. At Tulip, I was
+          part of the Checkout team working as a Backend Software Developer. I worked on a range of tasks such as:
+          creating backend endpoints in PHP, SQL query optimizations, reducing time complexity within
+          codebase, optimizing a metric dashboard for API requests in Grafana, reducing PHP errors/warnings
+          by 80% in GCP logs, bug fixes, and more.
+        </p>
+      </div>
+
     ]}
       rightContent={[
         <HeaderContainer>
@@ -70,18 +89,20 @@ const IndexPage = () => (
             <HeaderContainer>
               <h3>Languages</h3>
             </HeaderContainer>,
-            <p>
-              <ul>
-                <li>C</li>
-                <li>Java</li>
-                <li>JavaScript</li>
-                <li>PHP</li>
-                <li>HTML5/CSS3</li>
-                <li>TypeScript</li>
-                <li>SQL</li>
-                <li>MongoDB</li>
-              </ul>
-            </p>,
+            <div>
+              <p>
+                <ul>
+                  <li>C</li>
+                  <li>Java</li>
+                  <li>JavaScript</li>
+                  <li>PHP</li>
+                  <li>HTML5/CSS3</li>
+                  <li>TypeScript</li>
+                  <li>SQL</li>
+                  <li>MongoDB</li>
+                </ul>
+              </p>
+            </div>,
             <HeaderContainer>
               <h3>Frameworks</h3>
             </HeaderContainer>,
@@ -96,15 +117,17 @@ const IndexPage = () => (
             <HeaderContainer>
               <h3>Tools</h3>
             </HeaderContainer>,
-            <p>
-              <ul>
-                <li>Docker</li>
-                <li>Redux</li>
-                <li>JUnit</li>
-                <li>Express</li>
-                <li>Firebase</li>
-              </ul>
-            </p>
+            <div>
+              <p>
+                <ul>
+                  <li>Docker</li>
+                  <li>Redux</li>
+                  <li>JUnit</li>
+                  <li>Express</li>
+                  <li>Firebase</li>
+                </ul>
+              </p>
+            </div>
           ]} />
       ]} />
 
@@ -112,27 +135,75 @@ const IndexPage = () => (
     <Section leftContent={[
       <HeaderContainer>
         <IconWrapper>
-          <MdWork />
+          <AiFillProject />
         </IconWrapper>
         <h2>Projects</h2>
       </HeaderContainer>,
       <HeaderContainer>
-        <SubHeadingLink to='https://tulip.com' target='_blank'>
+        <SubHeadingLink to='https://github.com/L-Michael1/Ukiyo' target='_blank'>
           <SubIconWrapper>
             <AiOutlineLink />
           </SubIconWrapper>
-          <h3>Tulip</h3>
+          <h3>Ukiyo - Create and share recipes!</h3>
         </SubHeadingLink>
       </HeaderContainer>,
+      <h4>
+        May 2021 - Present
+      </h4>,
       <p>
-        Backend Software Developer - Checkout <br />
-        Guelph, Ontario <br />
-        Sep 2021 - Dec 2021 <br /> <br />
-        Tulip is a company that provides software as a service that aims at digitizing retail. At Tulip, I was
-        part of the Checkout team working as a Backend Software Developer. I worked on a range of tasks such as:
-        creating backend endpoints in PHP, SQL query optimizations, reducing time complexity within
-        codebase, optimizing a metric dashboard for API requests in Grafana, reducing PHP errors/warnings
-        by 80% in GCP logs, bug fixes, and more.
+        In the works of developing a full-stack web-application in <b>React</b> that allows
+        users to share food recipes through a responsive and intricate user interface.
+        Ukiyo implements back-end <b>RESTful</b> design principles in <b>Express</b> supporting features such
+        as <b>CRUD</b> functions for each user, creating and deleting personal recipes from <b>MongoDB</b>,
+        along with a favourite functionality. Utilizing Google’s <b>Firebase</b> for user authentication.
+      </p>,
+      <HeaderContainer>
+        <SubHeadingLink to='https://github.com/L-Michael1/Dogedex' target='_blank'>
+          <SubIconWrapper>
+            <AiOutlineLink />
+          </SubIconWrapper>
+          <h3>Dogedex - Detect dog breeds!</h3>
+        </SubHeadingLink>
+      </HeaderContainer>,
+      <h4>
+        December 2021
+      </h4>,
+      <p>
+        During a Tulip <b>hackathon</b> I got the inspiration from a fellow colleague
+        to make a quick little application using ml5.js - a machine learning library
+        with premade models. Given an image of a dog, Dogedex will detect and spit out
+        confidences of different dog breeds!
+      </p>,
+      <HeaderContainer>
+        <SubHeadingLink to='https://github.com/L-Michael1/mlammy' target='_blank'>
+          <SubIconWrapper>
+            <AiOutlineLink />
+          </SubIconWrapper>
+          <h3>mlammy - Personal portfolio website</h3>
+        </SubHeadingLink>
+      </HeaderContainer>,
+      <h4>
+        November 2021 - December 2021
+      </h4>,
+      <p>
+        Developed a responsive and robust single page web-based portfolio to showcase personal work and experience.
+        Built and deployed using Gatsby – coded with React and GraphQL. Implemented ChakraUI, MaterialUI, and
+        Styled-Components to create an intricate and responsive UI.
+      </p>,
+      <HeaderContainer>
+        <SubHeadingLink to='https://github.com/L-Michael1/m-bot' target='_blank'>
+          <SubIconWrapper>
+            <AiOutlineLink />
+          </SubIconWrapper>
+          <h3>mBot - Server moderation Discord bot</h3>
+        </SubHeadingLink>
+      </HeaderContainer>,
+      <h4>
+        May 2020 - July 2020
+      </h4>,
+      <p>
+        Developed a Discord Bot using JavaScript, Node.js and Discord.js that contains a variety of server moderating
+        commands, fun gambling games, and an economy system.
       </p>,
     ]}
       rightContent={[
@@ -140,37 +211,19 @@ const IndexPage = () => (
           <IconWrapper>
             <FaLaptopCode />
           </IconWrapper>
-          <h2>Technical Skills</h2>
+          <h2>Education</h2>
         </HeaderContainer>,
+        <h3>
+          University of Guelph
+        </h3>,
+        <p>
+          Guelph, Ontario <br />
+          Sep 2019 - Present <br /> <br />
+          - Enrolled in the <b>Computer Science (Co-op)</b> program <br />
+          - Dean's Honours List (2019-Present) - Achieved through earning an 80% or above <br />
+          - Awarded University of Guelph Entrance Scholarship ($3000) - Achieved through having an acceptance average over 90% <br />
+        </p>
       ]} />
-    {/* <Section
-      leftHeader={
-        `Projects`
-      }
-      leftContent={
-        `Lorem ipsum dolor sit amet, consectetur a ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmdipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum`
-      }
-      rightHeader={
-        `Work Term Reports`
-      }
-      rightContent={
-        `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmm`
-      }
-    />
-    <Section
-      leftHeader={
-        `Projects`
-      }
-      leftContent={
-        `Lorem ipsum dolor sit amet, consectetur a ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmdipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum`
-      }
-      rightHeader={
-        `Work Term Reports`
-      }
-      rightContent={
-        `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmm`
-      }
-    /> */}
 
     {/* <p>
       <Link to="/page-2/">Go to page 2</Link> <br />
