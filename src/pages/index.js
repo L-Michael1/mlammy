@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import styled from 'styled-components'
 
 // Components
 import Seo from "../components/seo/seo"
@@ -8,7 +9,6 @@ import Typewriter from "../components/typewriter/typewriter"
 import Contact from '../components/contact/contact'
 import Section from '../components/section/section'
 import Header from '../components/header/header'
-import { HeaderContainer, IconWrapper, Logo, SubHeadingLink, SubIconWrapper } from './index.styled'
 
 // Icons
 import { MdWork } from 'react-icons/md'
@@ -32,6 +32,40 @@ import Redux from '../images/redux.svg'
 import Sql from '../images/sql.svg'
 import Test from '../images/test.svg'
 import TypeScript from '../images/typescript.svg'
+
+const HeaderContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+`
+
+const IconWrapper = styled.div`
+    color: #DDEECC;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-right: 1rem;
+    padding: 0rem;
+`
+
+const SubIconWrapper = styled.div`
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    margin-top: 1.3rem;
+    margin-right: 0.8rem;
+    padding: 0rem;
+`
+
+const SubHeadingLink = styled(Link)`
+    margin: 0;
+    display: flex;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: all 1s ease 0s;
+
+    :hover{
+        color: #B9C8AB;
+        text-decoration: underline;
+    }
+`
 
 const IndexPage = () => (
   <>
@@ -241,12 +275,6 @@ const IndexPage = () => (
           </SubHeadingLink>
         </HeaderContainer>,
       ]} />
-    {/* <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link> <br />
-      <Link to="/using-ssr">Go to "Using SSR"</Link> <br />
-      <Link to="/using-dsg">Go to "Using DSG"</Link>
-    </p> */}
   </>
 )
 
