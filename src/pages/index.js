@@ -233,7 +233,7 @@ const IndexPage = () => (
         </HeaderContainer>,
         <h3>Find my Co-op work term reports below!</h3>,
         <HeaderContainer>
-          <SubHeadingLink to='https://github.com/L-Michael1/m-bot' target='_blank'>
+          <SubHeadingLink to='/tulip-report' target='_blank'>
             <SubIconWrapper>
               <AiOutlineLink />
             </SubIconWrapper>
