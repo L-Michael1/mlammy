@@ -1,5 +1,6 @@
 import * as React from 'react'
 import Seo from "../components/seo/seo"
+import Layout from "../components/layout/layout"
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
@@ -51,7 +52,7 @@ const HomeButton = styled(Button)`
 
 const TulipReport = () => {
     return (
-        <>
+        <Layout>
             <Seo title="Tulip Report" />
             <Header>Tulip</Header>
             <StaticImage
@@ -122,7 +123,7 @@ const TulipReport = () => {
                     Home
                 </HomeButton>
             </Link>
-        </>
+        </Layout>
     )
 }
 

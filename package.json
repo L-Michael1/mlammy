@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "mlammy",
   "private": true,
-  "description": "Personal portfolio",
+  "description": "Personal portfolio website",
   "version": "0.1.0",
   "author": "Michael Lam",
   "dependencies": {

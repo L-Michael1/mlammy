@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import bepopGIF from '../gifs/404-smoke.gif'
 import { Button } from '@chakra-ui/react'
 import { Link } from 'gatsby'
+import Layout from '../components/layout/layout'
 
 const Description = styled.p`
   color: #FFFFFF;
@@ -50,7 +51,7 @@ const HomeButton = styled(Button)`
 `
 
 const NotFoundPage = () => (
-  <>
+  <Layout>
     <Seo title="404: Not found" />
     <Typewriter text="404: Not Found" textAlign="center" textColor="#DDEECC" initDelay={0} minTypeSpeed={60} maxTypeSpeed={70} />
     <Description>You just entered a nonexistent world...oh, so sad.</Description>
@@ -63,7 +64,7 @@ const NotFoundPage = () => (
         Back to Homepage
       </HomeButton>
     </Link>
-  </>
+  </Layout>
 )
 
 export default NotFoundPage

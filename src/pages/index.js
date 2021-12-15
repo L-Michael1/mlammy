@@ -4,6 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import styled from 'styled-components'
 
 // Components
+import Layout from "../components/layout/layout"
 import Seo from "../components/seo/seo"
 import Typewriter from "../components/typewriter/typewriter"
 import Contact from '../components/contact/contact'
@@ -17,21 +18,7 @@ import { FaLaptopCode } from "react-icons/fa"
 import { AiFillProject } from "react-icons/ai"
 import { IoMdSchool } from 'react-icons/io'
 import { HiOutlineDocumentReport } from "react-icons/hi"
-import C from '../images/c.svg'
-import Docker from '../images/docker.svg'
-import Firebase from '../images/firebase.svg'
-import Html from '../images/html.svg'
-import Java from '../images/java.svg'
-import JavaScript from '../images/javascript.svg'
-import Mongodb from '../images/mongodb.svg'
-import NodeDot from '../images/node-dot-js.svg'
-import Node from '../images/node.svg'
-import Php from '../images/php.svg'
-import ReactLogo from '../images/react.svg'
-import Redux from '../images/redux.svg'
-import Sql from '../images/sql.svg'
-import Test from '../images/test.svg'
-import TypeScript from '../images/typescript.svg'
+
 
 const HeaderContainer = styled.div`
     display: flex;
@@ -68,7 +55,7 @@ const SubHeadingLink = styled(Link)`
 `
 
 const IndexPage = () => (
-  <>
+  <Layout>
     <Seo title="Home" />
     <StaticImage
       src="../images/mlam.png"
@@ -274,7 +261,7 @@ const IndexPage = () => (
           </SubHeadingLink>
         </HeaderContainer>,
       ]} />
-  </>
+  </Layout>
 )
 
 export default IndexPage

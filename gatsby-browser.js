@@ -1,3 +1,3 @@
-import { wrapPageElement as wrap } from './src/wrapper'
+// import { wrapPageElement as wrap } from './src/wrapper'
 
-export const wrapPageElement = wrap
+// export const wrapPageElement = wrap
