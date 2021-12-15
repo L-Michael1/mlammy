@@ -25,9 +25,9 @@ const Container = styled.div`
 `
 
 const HomeButton = styled(Button)`
-  background-color: #F54862;
-  color: #FFFFFF;
-  border-color: #F54862;
+  background-color: #F54862 !important;
+  color: #FFFFFF !important;
+  border-color: #F54862 !important;
   width: 100%auto;
   transition: all 0.3s ease 0s;
   padding: 1.25rem;
@@ -36,7 +36,7 @@ const HomeButton = styled(Button)`
 
   :hover{
     transform: translateY(-3px);
-    background-color: #f26e82;
+    background-color: #f26e82 !important;
     cursor: pointer;
   }
 
