@@ -20,9 +20,9 @@ const Gif = styled.img`
 `
 
 const HomeButton = styled(Button)`
-  background-color: #DDEECC;
-  color: #282931;
-  border-color: #DDEECC;
+  background-color: #DDEECC !important;
+  color: #282931 !important;
+  border-color: #DDEECC !important;
   width: 100%auto;
   transition: all 0.3s ease 0s;
   padding: 1.25rem;
@@ -30,7 +30,7 @@ const HomeButton = styled(Button)`
 
   :hover{
     transform: translateY(-3px);
-    background-color: #B9C8AB;
+    background-color: #B9C8AB !important;
     cursor: pointer;
   }
 

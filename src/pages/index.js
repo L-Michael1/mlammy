@@ -36,11 +36,13 @@ const SubHeaderContainer = styled.div`
 `
 
 const SubHeading = styled.h3`
+    color: #FFFFFF;
     font-size: 1.15rem;
     font-weight: 700;
 `
 
 const ContentContainer = styled.div`
+    color: #FFFFFF;
     padding-bottom: 1.5rem;
 `
 
