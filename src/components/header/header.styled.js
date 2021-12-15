@@ -13,7 +13,7 @@ export const Containter = styled.div`
 export const IconWrapper = styled.div`
     color: #FFFFFF;
     font-size: 1.5rem;
-    margin: 1.45rem 1rem 1rem 1rem;
+    margin: 0.8rem 1rem 1rem 1rem;
     padding: 0rem;
 `
 
