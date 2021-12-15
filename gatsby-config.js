@@ -4,6 +4,7 @@ module.exports = {
     author: `Michael Lam`,
   },
   plugins: [
+    `@chakra-ui/gatsby-plugin`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     `gatsby-plugin-styled-components`,

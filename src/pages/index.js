@@ -111,7 +111,6 @@ const IndexPage = () => (
           by 80% in GCP logs, bug fixes, and more.
         </p>
       </div>
-
     ]}
       rightContent={[
         <HeaderContainer>
