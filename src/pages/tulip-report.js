@@ -135,10 +135,12 @@ const TulipReport = () => {
             <Container>
                 <SubHeader>Acknowledgements</SubHeader>
                 <Content>
-                    I would like to express my deepest appreciation to my team lead, and friend, Keaton Neville. Not only did he teach me a wide range of
-                    technical skills, but he also taught me how to better myself and I couldn't be more grateful. He was someone who understood me, and my mental
-                    wellbeing, he was someone who I could genuinely relate to, and he was someone that I looked up to. I don't think I've ever met a more genuine, relatable,
-                    and hard-working person in my entire life, and I've got to say, that he did change my life.
+                    I would like to express my sincere gratitude to my Development Team Lead/Manager, Keaton Neville, for providing invaluable guidance and
+                    knowledge during my work term. His wide range of technical skills, compassion and sincerity towards others, and motivation to help push
+                    the company in the right direction were all very inspiring to me. Though, his humour and friendship were the two things I will never
+                    forget. He was someone who understood others and treated the whole team with sincerity. I am extremely grateful for the job opportunity and
+                    team members I got to work with this term. I was able to gain knowledge from every team member, and coming out of this work term, I
+                    feel more educated and prepared for my future.
                 </Content>
             </Container>
             <Link to='/' style={{ textDecoration: 'none' }}>
