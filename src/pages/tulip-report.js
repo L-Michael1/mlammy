@@ -75,7 +75,7 @@ const TulipReport = () => {
                 <Content>
                     Tulip is a company that provides software as a service that aims at transforming retail
                     into a digital setting. With Tulip’s solutions, retailers such as Chanel, Jimmy Choo, Kate
-                    Spade, and many more retail stores have the ability to strengthen the relationship between
+                    Spade, and many more retail stores can strengthen the relationship between
                     their brand and their customers. Tulip has multiple apps designed for iOS mobile devices for both sales
                     associates and retail customers such as Assisted Selling, Clienteling, and Live Connect.
                     Culture at Tulip is fantastic, friendly and helpful co-workers, great management, and a fun
@@ -100,13 +100,13 @@ const TulipReport = () => {
                         </ul>
                     </div>
                     <br />
-                    These were the goals I had upon entering Tulip, and I completed two of them.Concerning
-                    my first goal, I wanted to learn three new languages: PHP, Go, and Swift.It was a tough
-                    goal for such a short work term.I developed my PHP skills quite nicely as it was the main language
+                    These were the goals I had upon entering Tulip, and I completed two of them. Concerning
+                    my first goal, I wanted to learn three new languages: PHP, Go, and Swift. It was a tough
+                    goal for such a short work term. I developed my PHP skills quite nicely as it was the main language
                     I worked in, as for Go, I got some exposure to the language, and I found it super interesting! As for
                     Swift, I didn't get to touch because I never handled the iOS portion of things. This goal was
-                    an overreach, and I'll definitely learn to create goals that are more realistic and achievable in the
-                    near future.Overall, these skills are all very much transferrable to my future, not only technically,
+                    an overreach, and I'll learn to create goals that are more realistic and achievable in the
+                    near future. Overall, these skills are all very much transferrable to my future, not only technically,
                     but also personally!
                 </Content >
             </Container >
