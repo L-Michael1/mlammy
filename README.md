@@ -1,5 +1,9 @@
-# 🎓 mlammy
+# mlammy-v1 🎓 
 
-## Michael's portfolio
+Personal portfolio
+
+## Technology
+
+Built with `Gatsby`, `React`, `styled-components`
 
 ### https://mlammy.gatsbyjs.io/
